@@ -45,7 +45,4 @@ y_pred = model.predict(x_test)
 accuracy_score(y_test, y_pred)
 
 # Saving the model
-# pickle.dump(model, open('model.pkl', 'wb'))
-
-class_counts=df['prognosis'].value_counts()
-print(class_counts)
+pickle.dump(model, open('model.pkl', 'wb'))
