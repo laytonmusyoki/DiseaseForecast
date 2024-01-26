@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background: #b7baaf;
+            padding: 10px;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        select{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+        }
+        button{
+            padding-top: 30px;
+        }
+        h1{
+            color: #1c4443;
+        }
+        label{
+            font-weight: bolder;
+            color: #610c27;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <form action="" method="post">
+   <div class="box">
+    <h1>Health Cheker:</h1>
+    <div class="row">
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2" >Itching</label>
+                <select name="itching" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Skin_rash</label>
+                <select name="skin_rash" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Continuous_sneezing</label>
+                <select name="continuous_sneezing" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Chills</label>
+                <select name="chills" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Joint_pain</label>
+                <select name="joint_pain" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Vomiting</label>
+                <select name="vomiting" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Fatigue</label>
+                <select name="fatigue" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Weight_loss</label>
+                <select name="weight_loss" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Cough</label>
+                <select name="cough" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">High_fever</label>
+                <select name="high_fever" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Headache</label>
+                <select name="headache" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="" class="form-label p-2">Yellowish_skin</label>
+                <select name="yellowish_skin" id=""  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                   </select>
+            </div>
+            <div style="padding-top: 20px;">
+                <button type="submit" class="btn btn-success">Predict</button>
+            </div>
+            <div class="col-lg-6" style="padding-top: 20px;">
+               {{disease}}
+            </div>
+        </form>
+        
+</div>
+   </div>
+   </div>
+   
+</body>
+</html>
